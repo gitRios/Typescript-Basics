@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Course - Basics</title>
+    <script src="js/index.js" defer></script>
+    <style>
+        body { text-align: center;}
+    </style>
+</head>
+    <body>
+        <h1>Hello TypeScript</h1>
+        <br>
+        <h2>Comandos Básicos:</h2>
+        <p>
+            <q>npm i -g typescript</q>
+            instala o typescript globalmente na sua máquina e permite utilizar o comando tsc no cmd.
+        </p>
+        <p>
+            <q>tsc --init</q>
+            cria arquivo de configurações do Typescript chamado tsconfig.json
+        </p>
+        <p>
+            <q>tsc</q>
+            compila o arquivo typescript para javascript.
+        </p>
+        <p>
+            <q>tsc -w</q>
+            compila o código typescript para javascript ao modificar o código automaticamente. (live compiler)
+        </p>
+        <br>
+        <h2>No Arquivo tsconfig.json:</h2>
+        <p>
+            <strong>"target": "ES2016"</strong>
+            Indica qual a versão do Javascript que será utilizada na compilação.
+        </p>
+        <p>
+            <strong>"rootDir": "./src"</strong>
+            Indica qual o local em que está o arquivo typescript (.ts) a ser compilado.
+        </p>
+        <p>
+            <strong>"outDir": "./dist/js"</strong>
+            Indica qual o local em que será gerado o arquivo javascript da compilação. (.js)
+        </p>
+        <p>
+            <strong>"removeComments": true</strong>
+            Remove comentários feitos no arquivo typescript após a compilação para o arquivo javascript. (.js)
+        </p>
+        <p>
+            <strong>"module": "commonjs"</strong>
+            Indica qual module code é gerado (commonjs, Node16, ES6, ...)
+        </p>
+        <p>
+            <strong>"experimentalDecorators": true</strong>
+            Habilita a utilização de Decorators no Typescript.
+        </p>
+    </body>
+</html>
